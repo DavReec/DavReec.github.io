@@ -23,6 +23,7 @@ function calcFlujo(peso){
         peso = parseInt(peso);
         let flujo =(((peso * 4) + 7) / (peso + 90))*1500;
         flujo /= 24;
+        return flujo; 
     }
     return flujo;       
 }
