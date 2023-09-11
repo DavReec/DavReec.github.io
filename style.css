@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 body{
-    background: #f6f5f7; 
+    background: radial-gradient(circle, #5c0067 0%, #00d4ff 100%); 
     font-family: 'Montserrat', sans-serif;
     color: #3E363F;
 }
@@ -31,7 +31,7 @@ h1{
 }
 
 #detalle{
-    background: #FF416C;
+    background: #4184ff;
     
     width: 50%;
     height: 100%;
@@ -51,7 +51,9 @@ input {
 	width: 70%;
     padding: 12px 15px;
     border: none;
-    background-color: #eee;
+    background-color: #f0eded;
+    border-color: grey;
+    border-style:inset;
 }
 
 button {
@@ -60,16 +62,21 @@ button {
 	font-weight: bold;
 	padding: 12px 45px;
 	border-radius: 30px;
-	background-color: #FF416C;
-	border: 1px solid #FF416C;
+	background-color: #4184ff;
+	border: 1px solid #2e5aac;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: transform 20ms ease-in;
 }
+button:hover  {
+	transform: scale(1.02);
+    background-color:  #6699f9;
+}
 
 button:active {
 	transform: scale(0.95);
+    background-color:  #2e5aac;
 }
 
 #contenedor{
@@ -81,7 +88,7 @@ button:active {
     margin: auto;
     border-radius: 10px;
     overflow: hidden; 
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
 }
 
 #error{
@@ -91,7 +98,7 @@ button:active {
 }
 
 .resultado{
-    color: #0A81D1;
+    color: #770389;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
