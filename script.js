@@ -18,14 +18,14 @@ function calcFlujo(peso){
             resto -= aux;
         }
         flujo += resto*4;
+        return flujo; 
     }
     else{
         peso = parseInt(peso);
         let flujo =(((peso * 4) + 7) / (peso + 90))*1500;
         flujo /= 24;
         return flujo; 
-    }
-    return flujo;       
+    } 
 }
 
 CALCULAR.addEventListener('click', () => {
